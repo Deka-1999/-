@@ -16,6 +16,5 @@ print(y)
 fig = plt.figure()
 
 ax = fig.add_subplot(111)
-plt.xlim(0,1)
-ax.plot(lst2)
+ax.plot(lst1,lst2)
 plt.show()
