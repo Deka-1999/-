@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+h = 0.1
+y = 1
+x = 0 
+lst1=[]
+lst2=[]
+for n in range(10):
+    y = y + h * (y - 2*x/y)
+    x = x+h
+    lst1.append(x)
+    lst2.append(y)
+print(lst1)
+print(lst2)
+print(y)
+
+fig = plt.figure()
+
+ax = fig.add_subplot(111)
+plt.xlim(0,1)
+ax.plot(lst2)
+plt.show()
